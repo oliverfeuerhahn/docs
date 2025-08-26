@@ -3,90 +3,110 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2E3CFD",
+    "light": "#6F8FFF",
+    "dark": "#212BC4"
   },
   "favicon": "/favicon.svg",
+  "head": "<style>:root{--doc-bg:#F8F8F8;} html,body{background-color:var(--doc-bg) !important;} main, .main, .content, .docs-content, .mint-content, .prose, .container{background-color:transparent !important;} header,nav,aside{background-color:#FFFFFF !important;}</style>",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Platform",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "platform/getting-started/platform",
+              {
+                "group": "Products",
+                "pages": [
+                  "platform/getting-started/products/mcp",
+                  "platform/getting-started/products/embedded",
+                  "platform/getting-started/products/connectivity-api"
+                ]
+              }
             ]
           },
           {
-            "group": "Customization",
+            "group": "Users & Authentication",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "platform/users-authentication/overview"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Accounts & Teams",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "platform/accounts-teams/overview"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Security",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "platform/security/overview"
+            ]
+          },
+          {
+            "group": "Governance & Compliance",
+            "pages": [
+              "platform/governance-compliance/overview"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "tab": "MCP",
+        "anchors": [
           {
-            "group": "API documentation",
+            "anchor": "Guides",
             "pages": [
-              "api-reference/introduction"
+              "mcp/guides/overview"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "anchor": "API Reference",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "mcp/api-reference/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Embedded",
+        "anchors": [
+          {
+            "anchor": "Guides",
+            "pages": [
+              "embedded/guides/overview"
+            ]
+          },
+          {
+            "anchor": "API Reference",
+            "pages": [
+              "embedded/api-reference/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Connectivity API",
+        "anchors": [
+          {
+            "anchor": "Guides",
+            "pages": [
+              "connectivity-api/guides/overview"
+            ]
+          },
+          {
+            "anchor": "API Reference",
+            "pages": [
+              "connectivity-api/api-reference/introduction"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
+    
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -122,6 +142,14 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "styling": {
+    "background": {
+      "color": {
+        "light": "#F8F8F8",
+        "dark": "#0B0B0B"
+      }
     }
   }
 }
